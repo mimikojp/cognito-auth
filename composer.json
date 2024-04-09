@@ -1,0 +1,41 @@
+{
+  "name": "adcate/cognito-auth",
+  "type": "library",
+  "version": "v1.6.1",
+  "description": "Use to authentication with AWS Cognito.",
+  "require": {
+    "php": "^7.2|^8.0",
+    "league/oauth2-client": "^2.4.1",
+    "illuminate/auth": "^v6.0|^7.0|^v8.0|^v9.0",
+    "illuminate/support": "^v6.0|^7.0|^v8.0|^v9.0",
+    "illuminate/http": "^v6.0|^7.0|^v8.0|^v9.0",
+    "web-token/jwt-framework": "^2.0|^3.0",
+    "nesbot/carbon": "^2.23"
+  },
+  "require-dev": {
+    "laravel/framework": "^v6.20.42|^7.30.6|^v8.75.0|^v9.0",
+    "phpunit/phpunit": "^7.2|^9.0",
+    "mockery/mockery": "^1.2",
+    "egulias/email-validator": "^2.1.10|^v3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Adcate\\CognitoAuth\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Adcate\\CognitoAuth\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Adcate\\CognitoAuth\\Provider\\ServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --testdox --verbose --color=always"
+  }
+}
