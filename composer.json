@@ -1,5 +1,5 @@
 {
-  "name": "adcate/cognito-auth",
+  "name": "mimikojp/cognito-auth",
   "type": "library",
   "version": "v1.6.1",
   "description": "Use to authentication with AWS Cognito.",
